@@ -13,12 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/tordetect';
  */
 async function callTorNodeDetectorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            ip: &#x27;185.189.183.143&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
