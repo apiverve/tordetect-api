@@ -12,7 +12,6 @@ namespace APIVerve.API.TorNodeDetector
     {
         /// <summary>
         /// The IP address to check against the Tor exit node list
-        /// Example: 185.189.183.143
         /// </summary>
         [JsonProperty("ip")]
         public string Ip { get; set; }
