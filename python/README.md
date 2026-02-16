@@ -227,8 +227,9 @@ from apiverve_tornodedetector.apiClient import TordetectAPIClient
 
 api = TordetectAPIClient("[YOUR_API_KEY]")
 
+query = { "ip": "185.189.183.143" }
+
 try:
-    query = { "ip": "185.189.183.143" }
     result = api.execute(query)
     print(result)
 finally:
