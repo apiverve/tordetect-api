@@ -25,6 +25,9 @@ namespace APIVerve.API.TorNodeDetector
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,19 +36,19 @@ namespace APIVerve.API.TorNodeDetector
         public string IpAddress { get; set; }
 
         [JsonProperty("isTor")]
-        public bool IsTor { get; set; }
+        public bool? IsTor { get; set; }
 
         [JsonProperty("ipDetails")]
         public IpDetails IpDetails { get; set; }
 
         [JsonProperty("parsed")]
-        public bool Parsed { get; set; }
+        public bool? Parsed { get; set; }
     }
 
     public partial class IpDetails
     {
         [JsonProperty("range")]
-        public long[] Range { get; set; }
+        public long?[] Range { get; set; }
 
         [JsonProperty("country")]
         public string Country { get; set; }
@@ -55,5 +58,17 @@ namespace APIVerve.API.TorNodeDetector
 
         [JsonProperty("timezone")]
         public string Timezone { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
