@@ -1,13 +1,12 @@
 Tor Node Detector API
 ============
 
-Tor Detect is an API that checks whether a given IP address belongs to a known Tor exit node. Useful for security, access control, and analytics.
+Tor Node Detector is a Tor exit node checker API: send any IP address and it tells you whether that IP belongs to an active Tor exit node, so you can identify traffic originating from the anonymity network.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-tornodedetector.svg)](https://pypi.org/project/apiverve-tornodedetector/)
+
+This is a Python wrapper for the [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-tornodedetector
 
 ## Configuration
 
-Before using the tordetect API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Tor Node Detector API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Tor Node Detector API documentation is found here: [https://docs.apiverve.com/ref/tordetect](https://docs.apiverve.com/ref/tordetect?utm_source=pypi&utm_medium=readme).
+The Tor Node Detector API documentation is found here: [https://docs.apiverve.com/ref/tordetect](https://docs.apiverve.com/ref/tordetect?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -105,15 +104,13 @@ print(result)
     "ipAddress": "185.189.183.143",
     "isTor": true,
     "ipDetails": {
-      "range": [
-        3116217344,
-        3116218367
-      ],
       "country": "NL",
       "region": "ZH",
       "timezone": "Europe/Amsterdam"
     },
-    "parsed": true
+    "parsed": true,
+    "asn": "AS215747",
+    "asnName": "NUBACLOUD"
   }
 }
 ```
@@ -241,7 +238,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -252,12 +249,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
