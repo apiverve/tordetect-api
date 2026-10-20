@@ -1,13 +1,13 @@
-# [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Tor Detect is an API that checks whether a given IP address belongs to a known Tor exit node. Useful for security, access control, and analytics.
+Tor Node Detector is a Tor exit node checker API: send any IP address and it tells you whether that IP belongs to an active Tor exit node, so you can identify traffic originating from the anonymity network.
 
 The Tor Node Detector API provides a simple, reliable way to integrate tor node detector functionality into your applications. Built for developers who need production-ready tor node detector capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/tordetect-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/tordetect](https://docs.apiverve.com/ref/tordetect)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -191,11 +191,37 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Tor Node Detector API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "ipAddress": "185.189.183.143",
+    "isTor": true,
+    "ipDetails": {
+      "country": "NL",
+      "region": "ZH",
+      "timezone": "Europe/Amsterdam"
+    },
+    "parsed": true,
+    "asn": "AS215747",
+    "asnName": "NUBACLOUD"
+  }
 }
 ```
 
@@ -203,7 +229,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
