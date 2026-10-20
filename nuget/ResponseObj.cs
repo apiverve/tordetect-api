@@ -43,13 +43,16 @@ namespace APIVerve.API.TorNodeDetector
 
         [JsonProperty("parsed")]
         public bool? Parsed { get; set; }
+
+        [JsonProperty("asn")]
+        public string Asn { get; set; }
+
+        [JsonProperty("asnName")]
+        public string AsnName { get; set; }
     }
 
     public partial class IpDetails
     {
-        [JsonProperty("range")]
-        public long?[] Range { get; set; }
-
         [JsonProperty("country")]
         public string Country { get; set; }
 
