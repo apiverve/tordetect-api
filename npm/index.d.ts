@@ -29,10 +29,11 @@ declare module '@apiverve/tordetect' {
       isTor:     boolean | null;
       ipDetails: IPDetails;
       parsed:    boolean | null;
+      asn:       null | string;
+      asnName:   null | string;
   }
   
   interface IPDetails {
-      range:    (number | null)[];
       country:  null | string;
       region:   null | string;
       timezone: null | string;

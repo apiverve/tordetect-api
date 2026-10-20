@@ -1,13 +1,10 @@
 # Tor Node Detector API
 
-Tor Detect is an API that checks whether a given IP address belongs to a known Tor exit node. Useful for security, access control, and analytics.
+Tor Node Detector is a Tor exit node checker API: send any IP address and it tells you whether that IP belongs to an active Tor exit node, so you can identify traffic originating from the anonymity network.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/tordetect.svg)](https://www.npmjs.com/package/@apiverve/tordetect)
 
-This is a Javascript Wrapper for the [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [Tor Node Detector API](https://apiverve.com/marketplace/tordetect?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/tordetect
 ## Configuration
 
 Before using the Tor Node Detector API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The Tor Node Detector API documentation is found here: [https://docs.apiverve.com/ref/tordetect](https://docs.apiverve.com/ref/tordetect?utm_source=npm&utm_medium=readme).
+The Tor Node Detector API documentation is found here: [https://docs.apiverve.com/ref/tordetect](https://docs.apiverve.com/ref/tordetect?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -125,15 +122,13 @@ async function makeRequest() {
     "ipAddress": "185.189.183.143",
     "isTor": true,
     "ipDetails": {
-      "range": [
-        3116217344,
-        3116218367
-      ],
       "country": "NL",
       "region": "ZH",
       "timezone": "Europe/Amsterdam"
     },
-    "parsed": true
+    "parsed": true,
+    "asn": "AS215747",
+    "asnName": "NUBACLOUD"
   }
 }
 ```
@@ -142,7 +137,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -154,12 +149,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
