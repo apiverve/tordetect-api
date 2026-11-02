@@ -25,18 +25,28 @@ declare module '@apiverve/tordetect' {
 
 
   interface TorNodeDetectorData {
-      ipAddress: null | string;
-      isTor:     boolean | null;
-      ipDetails: IPDetails;
-      parsed:    boolean | null;
-      asn:       null | string;
-      asnName:   null | string;
+      ipAddress:  null | string;
+      isTor:      boolean | null;
+      ipDetails:  IPDetails;
+      parsed:     boolean | null;
+      asn:        null | string;
+      asnName:    null | string;
+      isTorRelay: boolean | null;
+      relay:      Relay;
   }
   
   interface IPDetails {
       country:  null | string;
-      region:   null | string;
+      region:   null;
       timezone: null | string;
+  }
+  
+  interface Relay {
+      nickname:  null | string;
+      isExit:    boolean | null;
+      flags:     (null | string)[];
+      firstSeen: Date | null;
+      lastSeen:  Date | null;
   }
 
   export default class tordetectWrapper {
