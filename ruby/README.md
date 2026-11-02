@@ -73,16 +73,33 @@ client = APIVerve::Tordetect::Client.new(
   "status": "ok",
   "error": null,
   "data": {
-    "ipAddress": "185.189.183.143",
+    "ipAddress": "204.8.96.141",
     "isTor": true,
     "ipDetails": {
-      "country": "NL",
-      "region": "ZH",
-      "timezone": "Europe/Amsterdam"
+      "country": "US",
+      "region": null,
+      "timezone": "America/Chicago"
     },
     "parsed": true,
-    "asn": "AS215747",
-    "asnName": "NUBACLOUD"
+    "asn": "AS62744",
+    "asnName": "QUINTEX",
+    "isTorRelay": true,
+    "relay": {
+      "nickname": "Quintex152",
+      "isExit": true,
+      "flags": [
+        "Exit",
+        "Fast",
+        "Guard",
+        "HSDir",
+        "Running",
+        "Stable",
+        "V2Dir",
+        "Valid"
+      ],
+      "firstSeen": "2026-07-03T01:00:00Z",
+      "lastSeen": "2026-10-27T01:00:00Z"
+    }
   }
 }
 ```
