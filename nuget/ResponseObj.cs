@@ -49,6 +49,12 @@ namespace APIVerve.API.TorNodeDetector
 
         [JsonProperty("asnName")]
         public string AsnName { get; set; }
+
+        [JsonProperty("isTorRelay")]
+        public bool? IsTorRelay { get; set; }
+
+        [JsonProperty("relay")]
+        public Relay Relay { get; set; }
     }
 
     public partial class IpDetails
@@ -57,10 +63,28 @@ namespace APIVerve.API.TorNodeDetector
         public string Country { get; set; }
 
         [JsonProperty("region")]
-        public string Region { get; set; }
+        public object Region { get; set; }
 
         [JsonProperty("timezone")]
         public string Timezone { get; set; }
+    }
+
+    public partial class Relay
+    {
+        [JsonProperty("nickname")]
+        public string Nickname { get; set; }
+
+        [JsonProperty("isExit")]
+        public bool? IsExit { get; set; }
+
+        [JsonProperty("flags")]
+        public string[] Flags { get; set; }
+
+        [JsonProperty("firstSeen")]
+        public DateTimeOffset? FirstSeen { get; set; }
+
+        [JsonProperty("lastSeen")]
+        public DateTimeOffset? LastSeen { get; set; }
     }
 
     public partial class Premium
