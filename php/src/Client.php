@@ -15,7 +15,7 @@ use APIVerve\Tordetect\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['ip' => '185.189.183.143']);
+ * $response = $client->execute(['ip' => '171.25.193.234']);
  * print_r($response);
  * ```
  *

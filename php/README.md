@@ -27,7 +27,7 @@ use APIVerve\Tordetect\Client;
 $client = new Client('YOUR_API_KEY');
 
 // Make a request
-$response = $client->execute(['ip' => '185.189.183.143']);
+$response = $client->execute(['ip' => '171.25.193.234']);
 
 // Print the response
 print_r($response);
@@ -42,7 +42,7 @@ use APIVerve\Tordetect\Exceptions\APIException;
 use APIVerve\Tordetect\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['ip' => '185.189.183.143']);
+    $response = $client->execute(['ip' => '171.25.193.234']);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());
