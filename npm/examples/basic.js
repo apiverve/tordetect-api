@@ -15,7 +15,7 @@ const api = new tordetectAPI({
 
 // Example query
 var query = {
-  ip: "185.189.183.143"
+  ip: "171.25.193.234"
 };
 
 // Make the API request using callback
