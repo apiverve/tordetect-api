@@ -18,7 +18,7 @@ def call_tordetect_api():
     """
     try:
         # Query parameters
-        params &#x3D; {&#x27;ip&#x27;: &#x27;185.189.183.143&#x27;}
+        params &#x3D; {&#x27;ip&#x27;: &#x27;171.25.193.234&#x27;}
 
         headers = {
             'x-api-key': API_KEY

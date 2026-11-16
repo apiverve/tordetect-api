@@ -31,7 +31,7 @@ paths:
             type: string
           required: true
           description: The IP address to check against the Tor exit node list
-          example: 185.189.183.143
+          example: 171.25.193.234
       responses:
         '200':
           description: Successful Response

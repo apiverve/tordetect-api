@@ -15,7 +15,7 @@ async function callTorNodeDetectorAPI() {
   try {
     // Query parameters
     const params &#x3D; new URLSearchParams({
-            ip: &#x27;185.189.183.143&#x27;
+            ip: &#x27;171.25.193.234&#x27;
         });
 
     const response = await fetch(`${API_URL}?${params}`, {

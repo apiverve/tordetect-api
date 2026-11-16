@@ -31,7 +31,7 @@ The Tor Node Detector API provides a simple, reliable way to integrate tor node 
 async function callTorNodeDetectorAPI() {
     try {
         const params = new URLSearchParams({
-            ip: '185.189.183.143'
+            ip: '171.25.193.234'
         });
 
         const response = await fetch(`https://api.apiverve.com/v1/tordetect?${params}`, {
@@ -54,7 +54,7 @@ callTorNodeDetectorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/tordetect?ip=185.189.183.143" \
+curl -X GET "https://api.apiverve.com/v1/tordetect?ip=171.25.193.234" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 

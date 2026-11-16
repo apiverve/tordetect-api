@@ -14,7 +14,7 @@ public class BasicExample {
         try {
             // Query parameters
             Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;ip&quot;, &quot;185.189.183.143&quot;);
+        parameters.put(&quot;ip&quot;, &quot;171.25.193.234&quot;);
 
             // Execute the API request
             APIResponse response = client.execute(parameters);
