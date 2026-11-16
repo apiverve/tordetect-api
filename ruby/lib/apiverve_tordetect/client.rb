@@ -10,7 +10,7 @@ module APIVerve
     #
     # @example Basic usage
     #   client = APIVerve::Tordetect::Client.new(api_key: "your_api_key")
-    #   response = client.execute({ ip: "185.189.183.143" })
+    #   response = client.execute({ ip: "171.25.193.234" })
     #   puts response
     #
     # @see https://apiverve.com/marketplace/tordetect?utm_source=ruby&utm_medium=referral&utm_content=readme

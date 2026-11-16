@@ -35,7 +35,7 @@ require 'apiverve_tordetect'
 client = APIVerve::Tordetect::Client.new(api_key: "YOUR_API_KEY")
 
 # Make a request
-response = client.execute({ ip: "185.189.183.143" })
+response = client.execute({ ip: "171.25.193.234" })
 
 # Print the response
 puts response
@@ -46,7 +46,7 @@ puts response
 
 ```ruby
 begin
-  response = client.execute({ ip: "185.189.183.143" })
+  response = client.execute({ ip: "171.25.193.234" })
   puts response["data"]
 rescue APIVerve::Tordetect::ValidationError => e
   puts "Validation error: #{e.errors.join(', ')}"
